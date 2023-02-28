@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MediaGuide</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt pretium vulputate. Suspendisse eu diam et tortor tristique blandit. Praesent porta tempor eros sit amet condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam non dui ex. Vivamus in elementum libero, quis dignissim lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi in tempus leo. Praesent lobortis risus vitae justo rutrum, a laoreet felis tincidunt.
+        Proin sodales tincidunt nulla, eget dapibus tortor interdum id. In hac habitasse platea dictumst. Duis consectetur posuere tempus. Vivamus eu maximus magna, id imperdiet ante. Sed sit amet lobortis tortor, ac elementum dolor. Donec venenatis justo quis quam rutrum, euismod accumsan ante cursus. Aliquam blandit placerat tortor vel blandit. Fusce ut elit non ipsum rutrum varius nec porttitor nulla. Vestibulum porttitor euismod mi non pretium. Cras elementum eget massa in consequat. Curabitur vitae ipsum ac lectus faucibus porta. Curabitur ut tortor erat. Nulla bibendum, justo ac sodales gravida, arcu purus varius lorem, quis semper purus massa vel ipsum. Ut eget eros eros. Sed luctus enim sit amet est dapibus suscipit. Nam placerat velit non maximus volutpat.
+        Vestibulum a blandit mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget erat consectetur orci fringilla ultrices. Phasellus tristique massa et metus porta hendrerit. Vivamus accumsan ligula libero, ac interdum massa rhoncus sit amet. Nullam ac nisl et ante sagittis consequat. Phasellus sit amet consectetur justo. In eu arcu tincidunt, tempor orci maximus, pretium urna. Pellentesque aliquet elementum urna. Phasellus at nisi neque. Sed a consequat velit. Suspendisse dignissim, enim at porttitor cursus, massa neque venenatis ligula, ac maximus odio lorem accumsan orci. Nunc at urna vitae ipsum congue venenatis.
+    </string>
+</resources>

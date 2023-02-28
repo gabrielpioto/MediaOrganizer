@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PinnedParallaxScroll">
+        <attr name="parallax_factor" format="float" />
+        <attr name="alpha_factor" format="float" />
+        <attr name="pinned_top_position" format="dimension" />
+    </declare-styleable>
+
+
+</resources>

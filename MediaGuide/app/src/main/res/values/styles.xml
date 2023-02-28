@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+        <item name="vpiTitlePageIndicatorStyle">@style/Widget.TitlePageIndicator</item>
+    </style>
+
+    <style name="Widget.TitlePageIndicator">
+        <!--<item name="android:layout_gravity">center</item>-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:textAppearance"></item>-->
+    </style>
+
+    <style name="AppTheme.PageActivity" parent ="Theme.AppCompat.Light.NoActionBar" >
+
+    </style>
+
+</resources>
