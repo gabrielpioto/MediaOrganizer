@@ -1,7 +1,13 @@
 package com.mediazer.osub.model.base;
 
+import java.util.Map;
+
 public abstract class OData<T> extends OBase{
-	private T data;
+	public T data;
+	
+	public OData(Map<String, ?> map) {
+		super(map);
+	}
 	
 	public T getData(){
 		return data;

@@ -11,7 +11,6 @@ import org.apache.xmlrpc.XmlRpcException;
 import org.apache.xmlrpc.client.XmlRpcClient;
 import org.apache.xmlrpc.client.XmlRpcClientConfigImpl;
 
-import com.mediazer.osub.conversor.Conversors;
 import com.mediazer.osub.model.response.OLogin;
 import com.mediazer.osub.model.response.OLogout;
 import com.mediazer.osub.model.response.OMovies;
@@ -38,19 +37,19 @@ public class OpenSubApi implements OpenSub {
 	public OLogin login(String userName, String password, String language,
 			String userAgent) {
 		Map<String, ?> r = execute(Method.LOGIN, userName, password, language, userAgent);
-		return Conversors.<OLogin> convertDefault(OLogin.class, r);
+		return new OLogin(r);
 	}
 
 	@Override
 	public OLogout logout(String token) {
 		Map<String, ?> r = execute(Method.LOGOUT, token);
-		return Conversors.<OLogout> convertDefault(OLogout.class, r);
+		return new OLogout(r);
 	}
 
 	@Override
 	public OMovies checkMovieHash(String token, Collection<?> hashes) {
 		Map<String, ?> r = execute(Method.MOVIE, token, hashes.toArray());
-		return Conversors.MOVIES.convert(OMovies.class, r);
+		return new OMovies(r);
 	}
 
 	@Override
@@ -60,13 +59,13 @@ public class OpenSubApi implements OpenSub {
 			searchList.add(search.build());
 		}		
 		Map<String, ?> r = execute(Method.SEARCH, token, searchList.toArray());
-		return Conversors.SUBINFOS.convert(OSubInfos.class, r);
+		return new OSubInfos(r);
 	}
 
 	@Override
 	public OSubtitles downloadSubtitles(String token, Collection<String> idsSubtitleFile) {
 		Map<String, ?> r = execute(Method.DOWNLOAD, token, idsSubtitleFile.toArray());
-		return Conversors.SUBTITLES.convert(OSubtitles.class, r);
+		return new OSubtitles(r);
 	}
 
 	

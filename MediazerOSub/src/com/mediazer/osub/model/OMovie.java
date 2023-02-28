@@ -1,10 +1,16 @@
 package com.mediazer.osub.model;
 
+import java.util.Map;
+
 import com.mediazer.osub.model.base.OObject;
 
 public class OMovie extends OObject{
 	private String MovieHash, MovieImdbID, MovieName, MovieYear, MovieKind, SeriesSeason,
 	SeriesEpisode, SeenCount, SubCount;
+	
+	public OMovie(Map<String,?> map) {
+		super(map);
+	}
 
 	public String getMovieHash() {
 		return MovieHash;

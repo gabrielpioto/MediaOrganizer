@@ -1,7 +1,6 @@
 package com.mediazer.osub.model;
 
-import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
+import java.util.Map;
 
 import com.mediazer.osub.model.base.OObject;
 
@@ -14,6 +13,10 @@ public class OSubInfo extends OObject{
 			UserNickName, ISO639, LanguageName, SubComments, SubHearingImpaired, UserRank,
 			SeriesSeason, SeriesEpisode, MovieKind, SubDownloadLink, ZipDownloadLink,
 			SubtitlesLink;
+
+	public OSubInfo(Map<String,?> map) {
+		super(map);
+	}
 
 	public String getMatchedBy() {
 		return MatchedBy;
@@ -173,12 +176,6 @@ public class OSubInfo extends OObject{
 
 	public String getSubtitlesLink() {
 		return SubtitlesLink;
-	}
-	
-	@Override
-	public String toString() {
-		return ReflectionToStringBuilder.toString(this, ToStringStyle.NO_FIELD_NAMES_STYLE);
-		//return super.toString();
 	}
 
 }
